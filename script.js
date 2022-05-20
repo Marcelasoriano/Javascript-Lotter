@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", function(e){
                 resultsBoard.classList.add("resultsBoard");
                 resultsBoard.classList.add("invisible");
                 if( common.length===0){
-                    paragraph.textContent ="Oh no!, only" + common.length + " balls and zero cash ";
+                    paragraph.textContent ="Oh no! only " + common.length + " balls and zero cash ";
                 } else if( common.length >0 && common.length< 3){
                     paragraph.textContent ="Outta luck, only " + common.length + " , still no cash ";
                 } else if(common.length ===3) {
