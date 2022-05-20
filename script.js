@@ -162,7 +162,7 @@ function makeComebackBtn(){
         var comebackBtn = document.createElement("a");
         comebackBtn.classList.add("comebackBtn");
         section.appendChild(comebackBtn);
-        comebackBtn.textContent ="again"
+        comebackBtn.textContent ="play again"
         comebackBtn.setAttribute("href", "https://lotteryfinal.glitch.me");
     }
 
