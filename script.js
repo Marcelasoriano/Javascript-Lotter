@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function(e){
                     }
                 }
             }
-            console.log(arr1, arr2, common); /* monitor your arrays console*/
+            console.log(arr1, arr2, common); /* monitor array console*/
             function generateResult(){
                 var resultsBoard = document.createElement("article");
                 section.appendChild(resultsBoard);
