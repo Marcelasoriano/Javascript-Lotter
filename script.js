@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function(e){
                 	boardEls[i].addEventListener("click", makeAlert);
                 }
                 var startDraw = document.querySelector(".startDraw");
-                if(startDraw === null){ // you have to prevent creating the button if it is already there!
+                if(startDraw === null){ // prevent creating the button if it is already there
                     createButtonForMachineDraw();
                 } else {
                     return;
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function(e){
         var btnToRemove = document.querySelector(".startDraw");
         
         btnToRemove.classList.add("invisible"); 
-        /* why not remove it entirely? because it might then be accidentally created if for some reason you happen to try to click on board!!! and you may do that*/
+        /* why not remove it entirely? because it might then be accidentally created if for some reason you happen to try to click on board! and you may do that*/
         return chosenByMachine;
 
     }
@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", function(e){
                 resultsBoard.classList.add("resultsBoard");
                 resultsBoard.classList.add("invisible");
                 if( common.length===0){
-                    paragraph.textContent ="Oh no! only " + common.length + " balls and zero cash ";
+                    paragraph.textContent ="Oh no! only, " + common.length + " balls and zero cash ";
                 } else if( common.length >0 && common.length< 3){
                     paragraph.textContent ="Outta luck, only " + common.length + " , still no cash ";
                 } else if(common.length ===3) {
