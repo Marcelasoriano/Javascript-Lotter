@@ -83,11 +83,11 @@ document.addEventListener("DOMContentLoaded", function(e){
         for( var i =0; i<5; i++){
             var idx = Math.floor(Math.random() * numbers.length)
             chosenByMachine.push(numbers[idx]);
-            /*a very important line of code which prevents machine from drawing the same number again 
+            /*important line of code which prevents machine from drawing the same number again 
              */
             numbers.splice(idx,1); 
             console.log(numbers)
-            /*this line of code allows to check if numbers are taken out*/
+            /*allows to check if numbers are taken out*/
         }
         var btnToRemove = document.querySelector(".startDraw");
         
@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function(e){
                     }
                 }
             }
-            console.log(arr1, arr2, common); /* you can monitor your arrays in console*/
+            console.log(arr1, arr2, common); /* monitor your arrays console*/
             function generateResult(){
                 var resultsBoard = document.createElement("article");
                 section.appendChild(resultsBoard);
