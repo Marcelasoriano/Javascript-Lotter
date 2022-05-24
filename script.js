@@ -92,7 +92,6 @@ document.addEventListener("DOMContentLoaded", function(e){
         var btnToRemove = document.querySelector(".startDraw");
         
         btnToRemove.classList.add("invisible"); 
-        /* why not remove it entirely? because it might then be accidentally created if for some reason you happen to try to click on board! and you may do that*/
         return chosenByMachine;
 
     }
