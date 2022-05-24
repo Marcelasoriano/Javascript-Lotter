@@ -163,7 +163,7 @@ function makeComebackBtn(){
         comebackBtn.classList.add("comebackBtn");
         section.appendChild(comebackBtn);
         comebackBtn.textContent ="play again"
-        comebackBtn.setAttribute("href", "https://lotteryfinal.glitch.me");
+        comebackBtn.setAttribute("href", "https://fantasy5.glitch.me");
     }
 
 })
